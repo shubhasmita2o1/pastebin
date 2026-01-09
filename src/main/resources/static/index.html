@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SnippetBin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="editor-card">
+    <h1>SnippetBin</h1>
+
+    <textarea id="content"
+      placeholder="// Paste your code or text here..."></textarea>
+
+    <div class="controls">
+      <select id="expiry">
+        <option value="">Never</option>
+        <option value="10">10 Minutes</option>
+        <option value="60">1 Hour</option>
+        <option value="1440">1 Day</option>
+      </select>
+    </div>
+
+    <button onclick="createPaste()">Create Snippet</button>
+
+    <p id="result"></p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
